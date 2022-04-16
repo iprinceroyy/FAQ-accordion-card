@@ -47,14 +47,15 @@
   position: relative;
 }
 
-.woman {
+.images .woman {
   position: absolute;
   top: -6.8rem;
   right: 0;
 }
 
+/*  faq section  */
 .faq {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 2.5rem;
 }
 
 .faq h1 {
@@ -86,7 +87,12 @@
 }
 
 .answer {
+  transition: all 0.2s ease;
   display: none;
+}
+
+.arrow:focus ~ .answer {
+  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */
