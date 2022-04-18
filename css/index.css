@@ -21,7 +21,7 @@
 }
 @media (min-width: 992px) {
   .container {
-    padding: 10rem 18rem;
+    padding: 10rem 20rem;
   }
 }
 
@@ -39,51 +39,53 @@
 @media (min-width: 992px) {
   .card {
     flex-direction: row;
+    padding: 0;
   }
 }
 
 .images {
-  flex-basis: 50%;
+  flex-basis: 60%;
   align-self: center;
   position: relative;
+  background-image: url("../assets/images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
 }
 @media (min-width: 992px) {
   .images {
-    background-image: url("../assets/images/illustration-box-desktop.svg");
+    background-image: url("../assets/images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left top;
   }
 }
 
 .images .woman {
   position: absolute;
-  top: -6.8rem;
-  right: 0;
+  top: 10rem;
+  left: 8rem;
 }
 @media (min-width: 992px) {
   .images .woman {
-    overflow-x: hidden;
-    top: -4rem;
-    left: -5rem;
+    top: -8rem;
+    left: -7rem;
   }
 }
 
 @media (min-width: 992px) {
   .images .bg-pattern {
     position: relative;
-    top: 0;
-    left: 2rem;
+    top: 2rem;
+    left: -8rem;
   }
 }
 
 /*  faq section  */
 .faq {
-  flex-basis: 50%;
+  flex-basis: 60%;
   padding: 1.5rem 0 2.5rem;
 }
 @media (min-width: 992px) {
   .faq {
-    padding: 4rem;
+    padding: 3.5rem;
   }
 }
 
