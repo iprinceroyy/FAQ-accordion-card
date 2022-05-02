@@ -59,12 +59,6 @@ To see how you can add code snippets, see below:
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-    console.log("🎉");
-};
-```
-
 ## Author
 
 -   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
