@@ -51,10 +51,10 @@ $fw-700: 700;
     min-height: 100vh;
     background-image: linear-gradient(180deg, $soft-violet, $soft-blue);
     padding: 10rem 2rem;
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
         padding: {
-            left: 8rem;
-            right: 8rem;
+            left: 20%;
+            right: 20%;
         }
     }
 }
@@ -70,7 +70,7 @@ $fw-700: 700;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
         flex-direction: row;
         padding: 0;
     }
@@ -83,7 +83,7 @@ $fw-700: 700;
     background-image: url("../assets/images/bg-pattern-mobile.svg");
     background-position: center top;
     background-repeat: no-repeat;
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
         background-image: url("../assets/images/bg-pattern-desktop.svg");
         background-repeat: no-repeat;
         background-position: left 30vw top 30vh;
@@ -95,7 +95,7 @@ $fw-700: 700;
     // position: absolute;
     // left: 0;
     // top: 0;
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
         position: absolute;
         top: -8rem;
         left: -7rem;
@@ -104,7 +104,7 @@ $fw-700: 700;
 
 .images .bg-pattern {
     position: relative;
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
         top: 2rem;
         left: -8rem;
     }
@@ -116,7 +116,7 @@ $fw-700: 700;
 .faq {
     flex-basis: 60%;
     padding: 1.5rem 0 2.5rem;
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
         padding: 3.5rem;
     }
 }
@@ -139,19 +139,30 @@ $fw-700: 700;
     border-width: 0 0 1px 0;
 }
 
-.question h2 {
+.question-1,
+.question-2,
+.question-3,
+.question-4,
+.question-5 {
     font-size: 1rem;
     font-weight: $fw-400;
+    &:active,
+    &:hover {
+        color: $soft-red;
+        cursor: pointer;
+    }
 }
 
 .question img {
     display: inline;
     width: 5%;
     height: 5%;
+    //justify-self: flex-end;
     transition: all 0.2s ease-in;
 }
 
 .answer {
+    margin-top: 0.5rem;
     display: none;
     transition: all 2s ease-in-out;
 }
@@ -160,9 +171,14 @@ $fw-700: 700;
 /* Classes for JS */
 
 .show {
-    display: inline-block;
+    display: block;
 }
 
 .animation {
     transform: rotate(180deg);
+}
+
+.typo-theme {
+    color: $dark-grayish-blue;
+    font-weight: $fw-700;
 }

@@ -19,10 +19,10 @@
   background-image: linear-gradient(180deg, #af67e9, #6565e7);
   padding: 10rem 2rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .container {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 
@@ -38,7 +38,7 @@
   align-items: center;
   justify-content: space-between;
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .card {
     flex-direction: row;
     padding: 0;
@@ -53,7 +53,7 @@
   background-position: center top;
   background-repeat: no-repeat;
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .images {
     background-image: url("../assets/images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 .images .woman {
   position: relative;
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .images .woman {
     position: absolute;
     top: -8rem;
@@ -75,7 +75,7 @@
 .images .bg-pattern {
   position: relative;
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .images .bg-pattern {
     top: 2rem;
     left: -8rem;
@@ -87,7 +87,7 @@
   flex-basis: 60%;
   padding: 1.5rem 0 2.5rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .faq {
     padding: 3.5rem;
   }
@@ -111,9 +111,25 @@
   border-width: 0 0 1px 0;
 }
 
-.question h2 {
+.question-1,
+.question-2,
+.question-3,
+.question-4,
+.question-5 {
   font-size: 1rem;
   font-weight: 400;
+}
+.question-1:active, .question-1:hover,
+.question-2:active,
+.question-2:hover,
+.question-3:active,
+.question-3:hover,
+.question-4:active,
+.question-4:hover,
+.question-5:active,
+.question-5:hover {
+  color: #f47c57;
+  cursor: pointer;
 }
 
 .question img {
@@ -124,17 +140,23 @@
 }
 
 .answer {
+  margin-top: 0.5rem;
   display: none;
   transition: all 2s ease-in-out;
 }
 
 /* Classes for JS */
 .show {
-  display: inline-block;
+  display: block;
 }
 
 .animation {
   transform: rotate(180deg);
+}
+
+.typo-theme {
+  color: #787887;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=index.css.map */
