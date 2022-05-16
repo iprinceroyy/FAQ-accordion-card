@@ -120,12 +120,12 @@
   display: inline;
   width: 5%;
   height: 5%;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .answer {
-  transition: all 0.2s ease;
   display: none;
+  transition: all 2s ease-in-out;
 }
 
 /* Classes for JS */
@@ -134,8 +134,7 @@
 }
 
 .animation {
-  animation-name: rotating;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=index.css.map */

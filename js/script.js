@@ -10,6 +10,7 @@ for (let i = 1; i <= question.length; i++) {
         .addEventListener("click", function() {
             document.querySelector(`.answer-${i}`).classList.toggle("show");
             //this.classList.toggle(".animation");
-            console.log(this.classList);
+            //console.log(this.classList);
+            document.querySelector(`.arrow-${i}`).classList.toggle("animation");
         });
 }
