@@ -79,7 +79,7 @@ $fw-700: 700;
 .images {
     position: relative;
     flex-basis: 60%;
-    //align-self: center;
+    align-self: center;
     background-image: url("../assets/images/bg-pattern-mobile.svg");
     background-position: center top;
     background-repeat: no-repeat;
@@ -92,7 +92,6 @@ $fw-700: 700;
 
 .images .woman {
     position: relative;
-    object-position: 80% 20%;
     // position: absolute;
     // left: 0;
     // top: 0;
@@ -131,6 +130,7 @@ $fw-700: 700;
 
 .question {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
@@ -148,6 +148,7 @@ $fw-700: 700;
     display: inline;
     width: 5%;
     height: 5%;
+    transition: all 0.5s ease-in;
 }
 
 .answer {
@@ -155,6 +156,14 @@ $fw-700: 700;
     display: none;
 }
 
-.arrow:focus~.answer {
-    display: block;
+
+/* Classes for JS */
+
+.show {
+    display: inline-block;
+}
+
+.animation {
+    animation-name: rotating;
+    transform: rotate(90deg);
 }
