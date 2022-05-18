@@ -47,6 +47,7 @@
 
 .images {
   position: relative;
+  flex-basis: 50%;
   align-self: center;
   background-image: url("../assets/images/bg-pattern-mobile.svg");
   background-position: center top;
@@ -54,9 +55,12 @@
 }
 @media (min-width: 1020px) {
   .images {
+    height: 100%;
+    align-self: stretch;
     background-image: url("../assets/images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
-    background-position: left 30vw top 30vh;
+    background-size: 100% 100%;
+    background-position: left -4vw center 10vh;
   }
 }
 
@@ -75,7 +79,7 @@
 }
 
 @media (min-width: 1020px) {
-  .test {
+  .images div {
     overflow: hidden;
   }
 }
@@ -88,9 +92,8 @@
 }
 @media (min-width: 1020px) {
   .images .woman {
-    top: 0rem;
+    top: 2rem;
     left: -4rem;
-    overflow-x: hidden;
     width: 100%;
   }
 }
