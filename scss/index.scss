@@ -16,6 +16,10 @@ $soft-red: hsl(14, 88%, 65%);
 $soft-violet: hsl(273, 75%, 66%);
 $soft-blue: hsl(240, 73%, 65%);
 
+/*---- Card ----*/
+
+$white: hsl(255, 100%, 100%);
+
 /*  Neutral  */
 
 
@@ -63,12 +67,13 @@ $fw-700: 700;
     font-family: $font-family;
     color: $dark-grayish-blue;
     font-size: $font-size;
-    border-radius: 20px;
-    background-color: #fff;
+    border-radius: 1.55rem;
+    background-color: $white;
     padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 1rem 2rem 5rem -1rem $very-dark-grayish-blue;
     @media (min-width: 1020px) {
         flex-direction: row;
         align-items: stretch;
@@ -119,7 +124,6 @@ $fw-700: 700;
     @media (min-width: 1020px) {
         top: 2rem;
         left: -4rem;
-        //overflow-x: hidden;
         width: 100%;
     }
 }
